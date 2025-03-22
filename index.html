@@ -5,38 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Eat & Meet - Restaurant local pour étudiants proposant une cuisine réinventée"
+      content="Voyage Gourmand - Restaurant éphémère changeant de culture culinaire chaque mois pour un voyage sensoriel"
     />
-    <title>Eat & Meet - Restaurant étudiant</title>
+    <title>Voyage Gourmand - Voyagez à travers les saveurs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- En-tête du site -->
     <header class="main-header">
       <nav class="main-nav container">
         <a href="/" class="logo">
-          <img src="./assets/images/logo_eat&meet.png" alt="Logo Eat & Meet" />
+          <img src="./assets/images/logo_voyage_gourmand.png" alt="Logo Voyage Gourmand" />
         </a>
         <ul class="nav-links">
-          <li><a href="#menu">Nos Menu</a></li>
-          <li><a href="#orders">Mes Commandes</a></li>
-          <li><a href="#recipe">Recette</a></li>
-          <li><a href="#about">À propos de nous</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#destination">Destination du mois</a></li>
+          <li><a href="#menu">Notre Menu</a></li>
+          <li><a href="#reservation">Réserver</a></li>
+          <li><a href="#passeport">Mon Passeport</a></li>
+          <li><a href="#archives">Escales passées</a></li>
+          <li><a href="#about">À propos</a></li>
         </ul>
         <div class="nav-actions">
-          <button class="btn-favorite">
-            <span class="sr-only">Favoris</span>
+          <button class="btn-passport">
+            <span class="sr-only">Mon Passeport</span>
           </button>
-          <button class="btn-cart">
-            <span class="sr-only">Panier</span>
+          <button class="btn-reservation">
+            <span class="sr-only">Réserver</span>
           </button>
         </div>
       </nav>
@@ -45,116 +48,249 @@
     <main>
       <!-- Section Hero -->
       <section class="hero">
-        <div class="hero-content container">
-          <h1>Bienvenue chez En Plein dans le Meal</h1>
-          <p class="hero-subtitle">Manger sain, local et étudiant-friendly !</p>
-          <a href="#menu" class="cta-button">Découvrir le menu</a>
+        <div class="hero-content container" data-aos="fade-up">
+          <div class="passport-stamp"></div>
+          <h1>Bienvenue chez Voyage Gourmand</h1>
+          <p class="hero-subtitle">Ici on voyage à travers les saveurs</p>
+          <p class="hero-description">Un restaurant éphémère qui change de culture culinaire chaque mois, pour un véritable voyage sensoriel</p>
+          <a href="#destination" class="cta-button">Découvrir la destination du mois</a>
         </div>
       </section>
 
-      <!-- Section Présentation -->
-      <section class="presentation">
+      <!-- Section Destination du mois -->
+      <section id="destination" class="destination">
         <div class="container">
-          <h2>La cuisine locale, réinventée pour les étudiants</h2>
-          <p class="presentation-text">
-            Chez nous, chaque plat est un mélange de saveurs locales et d'innovation culinaire. Nous
-            proposons une expérience unique avec le meilleur rapport qualité-prix pour nos
-            étudiants.
-          </p>
-          <a href="#about" class="btn-secondary">En savoir plus</a>
+          <h2 data-aos="fade-right">Notre destination du mois : <span class="highlight">Japon</span></h2>
+          <div class="destination-content">
+            <div class="destination-image" data-aos="fade-right">
+              <img src="./assets/images/destination-japon.jpg" alt="Cuisine japonaise" />
+              <div class="destination-stamp">Avril 2025</div>
+            </div>
+            <div class="destination-info" data-aos="fade-left">
+              <p class="destination-text">
+                Ce mois-ci, embarquez pour un voyage au pays du Soleil Levant. Découvrez les saveurs délicates et raffinées de la cuisine japonaise, où tradition et minutie se rencontrent pour créer une expérience culinaire inoubliable.
+              </p>
+              <p class="destination-text">
+                De la fraîcheur des sushis à la richesse des ramens, en passant par la finesse des tempuras, notre chef vous fait découvrir l'essence même de la gastronomie nippone.
+              </p>
+              <a href="#menu" class="btn-secondary">Découvrir le menu</a>
+              <a href="#reservation" class="cta-button">Réserver maintenant</a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Section Best Sellers -->
-      <section class="best-sellers">
+      <!-- Section Menu -->
+      <section id="menu" class="menu">
         <div class="container">
-          <h2>Nos Best seller</h2>
+          <h2 data-aos="fade-up">Notre menu japonais</h2>
           <div class="dishes-grid">
-            <article class="dish-card">
-              <img src="./assets/images/best-seller_wrap.png" alt="Wrap de poulet aux légumes" />
-              <h3>Wrap de poulet aux légumes</h3>
-              <a href="#" class="btn-order">Commander</a>
+            <article class="dish-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="dish-image">
+                <img src="./assets/images/menu-sushi.jpg" alt="Assortiment de sushis" />
+              </div>
+              <div class="dish-content">
+                <h3>Assortiment de sushis</h3>
+                <p class="dish-description">Une sélection de sushis frais préparés à la minute par notre chef</p>
+                <span class="dish-price">25€</span>
+              </div>
             </article>
-            <article class="dish-card">
-              <img src="./assets/images/best-seller_soupe.png" alt="Soupe de courge et gingembre" />
-              <h3>Soupe de courge et gingembre</h3>
-              <a href="#" class="btn-order">Commander</a>
+            <article class="dish-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="dish-image">
+                <img src="./assets/images/menu-ramen.jpg" alt="Ramen traditionnel" />
+              </div>
+              <div class="dish-content">
+                <h3>Ramen traditionnel</h3>
+                <p class="dish-description">Bouillon savoureux, nouilles fraîches et garnitures authentiques</p>
+                <span class="dish-price">18€</span>
+              </div>
             </article>
-            <article class="dish-card">
-              <img
-                src="./assets/images/best-seller_bowl.png"
-                alt="Bowl de quinoa aux légumes grillés"
-              />
-              <h3>Bowl de quinoa aux légumes grillés</h3>
-              <a href="#" class="btn-order">Commander</a>
+            <article class="dish-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="dish-image">
+                <img src="./assets/images/menu-tempura.jpg" alt="Tempura de légumes et crevettes" />
+              </div>
+              <div class="dish-content">
+                <h3>Tempura mixte</h3>
+                <p class="dish-description">Légumes de saison et crevettes en tempura légère et croustillante</p>
+                <span class="dish-price">22€</span>
+              </div>
             </article>
+          </div>
+          <div class="menu-note" data-aos="fade-up">
+            <p>Chaque plat est accompagné d'un tampon unique dans votre passeport culinaire</p>
           </div>
         </div>
       </section>
 
-      <!-- Section Offres -->
-      <section class="offers">
+      <!-- Section Réservation -->
+      <section id="reservation" class="reservation">
         <div class="container">
-          <h2>Nos offres</h2>
-          <div class="offers-grid">
-            <article class="offer-card">
-              <h3>Menu du jour</h3>
-              <div class="menu-content">
-                <p>Un menu équilibré à petit prix</p>
-                <!-- Contenu du menu -->
-              </div>
-              <a href="#" class="btn-order">Commander</a>
-            </article>
-            <article class="offer-card">
-              <h3>Formules étudiantes</h3>
-              <div class="menu-content">
-                <p>Plusieurs options adaptées à votre budget</p>
-                <!-- Options de formules -->
-              </div>
-              <a href="#" class="btn-order">Commander</a>
-            </article>
-            <article class="offer-card">
-              <h3>Végétarienne ou sans gluten</h3>
-              <div class="menu-content">
-                <p>Des options pour tous les régimes</p>
-                <!-- Options spéciales -->
-              </div>
-              <a href="#" class="btn-order">Commander</a>
-            </article>
+          <h2 data-aos="fade-up">Réservez votre escale culinaire</h2>
+          <div class="reservation-container" data-aos="fade-up">
+            <div class="reservation-image">
+              <img src="./assets/images/reservation-ambiance.jpg" alt="Ambiance du restaurant" />
+            </div>
+            <div class="reservation-form">
+              <form id="booking-form">
+                <div class="form-group">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Téléphone</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="time">Heure</label>
+                    <input type="time" id="time" name="time" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="guests">Nombre de personnes</label>
+                  <input type="number" id="guests" name="guests" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                  <label for="notes">Notes spéciales</label>
+                  <textarea id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Réserver maintenant</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Section Passeport -->
+      <section id="passeport" class="passeport">
+        <div class="container">
+          <h2 data-aos="fade-up">Votre passeport culinaire</h2>
+          <div class="passeport-content">
+            <div class="passeport-info" data-aos="fade-right">
+              <p>À chaque visite, recevez un tampon artistique unique correspondant à la destination culinaire du mois. Collectionnez ces souvenirs gastronomiques dans votre passeport personnalisé et retracez vos voyages à travers les saveurs du monde.</p>
+              <div class="passeport-benefits">
+                <div class="benefit" data-aos="fade-up" data-aos-delay="100">
+                  <div class="benefit-icon">🌍</div>
+                  <h3>Voyage culinaire</h3>
+                  <p>Découvrez une nouvelle cuisine chaque mois</p>
+                </div>
+                <div class="benefit" data-aos="fade-up" data-aos-delay="200">
+                  <div class="benefit-icon">🎨</div>
+                  <h3>Art et gastronomie</h3>
+                  <p>Des tampons uniques conçus par des artistes locaux</p>
+                </div>
+                <div class="benefit" data-aos="fade-up" data-aos-delay="300">
+                  <div class="benefit-icon">🎁</div>
+                  <h3>Récompenses</h3>
+                  <p>Des surprises après 5 et 10 tampons collectés</p>
+                </div>
+              </div>
+            </div>
+            <div class="passeport-image" data-aos="fade-left">
+              <img src="./assets/images/passeport-stamps.jpg" alt="Passeport avec tampons" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <!-- Section Témoignages -->
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="container">
-          <h2>Les retours de nos adeptes</h2>
+          <h2 data-aos="fade-up">Ce que disent nos voyageurs</h2>
           <div class="testimonials-container">
-            <article class="testimonial">
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-stamp japan-stamp"></div>
               <img
-                src="./assets/images/pic_profile_testimoniale-2.png"
+                src="./assets/images/testimonial-sophie.jpg"
                 alt="Photo de profil"
                 class="avatar"
               />
               <blockquote>
-                <p class="testimonial-text">Témoignage client 1</p>
+                <p class="testimonial-text">"Une expérience immersive extraordinaire ! J'ai adoré découvrir la cuisine thaïlandaise le mois dernier, et je suis impatiente de revenir pour le Japon. Mon passeport commence à se remplir !"</p>
                 <footer>
-                  <cite>Léa</cite>
+                  <cite>Sophie, <span class="testimonial-stamps">3 tampons</span></cite>
                 </footer>
               </blockquote>
             </article>
-            <article class="testimonial">
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-stamp italy-stamp"></div>
               <img
-                src="./assets/images/pic_profile_testimoniale-2.png"
+                src="./assets/images/testimonial-marc.jpg"
                 alt="Photo de profil"
                 class="avatar"
               />
               <blockquote>
-                <p class="testimonial-text">Témoignage client 2</p>
+                <p class="testimonial-text">"Je viens tous les mois depuis l'ouverture. Chaque visite est une nouvelle aventure culinaire et les tampons sont de véritables œuvres d'art. Un concept brillant!"</p>
                 <footer>
-                  <cite>Alex</cite>
+                  <cite>Marc, <span class="testimonial-stamps">8 tampons</span></cite>
                 </footer>
               </blockquote>
+            </article>
+            <article class="testimonial" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-stamp mexico-stamp"></div>
+              <img
+                src="./assets/images/testimonial-camille.jpg"
+                alt="Photo de profil"
+                class="avatar"
+              />
+              <blockquote>
+                <p class="testimonial-text">"J'ai offert une soirée à mes amis le mois dernier pour le Mexique, et nous avons été transportés ! L'ambiance, les saveurs, tout était parfait. Nos passeports nous rappellent cette soirée mémorable."</p>
+                <footer>
+                  <cite>Camille, <span class="testimonial-stamps">2 tampons</span></cite>
+                </footer>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Section Archives -->
+      <section id="archives" class="archives">
+        <div class="container">
+          <h2 data-aos="fade-up">Nos escales passées</h2>
+          <div class="archives-grid">
+            <article class="archive-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="archive-stamp thailand-stamp"></div>
+              <div class="archive-image">
+                <img src="./assets/images/archive-thailand.jpg" alt="Cuisine thaïlandaise" />
+              </div>
+              <div class="archive-content">
+                <h3>Thaïlande</h3>
+                <p class="archive-date">Mars 2025</p>
+                <p class="archive-description">Un voyage au cœur des saveurs épicées et parfumées du royaume de Siam.</p>
+                <a href="#" class="btn-secondary">Voir le menu</a>
+              </div>
+            </article>
+            <article class="archive-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="archive-stamp italy-stamp"></div>
+              <div class="archive-image">
+                <img src="./assets/images/archive-italy.jpg" alt="Cuisine italienne" />
+              </div>
+              <div class="archive-content">
+                <h3>Italie</h3>
+                <p class="archive-date">Février 2025</p>
+                <p class="archive-description">Une célébration de la gastronomie italienne authentique, entre tradition et convivialité.</p>
+                <a href="#" class="btn-secondary">Voir le menu</a>
+              </div>
+            </article>
+            <article class="archive-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="archive-stamp mexico-stamp"></div>
+              <div class="archive-image">
+                <img src="./assets/images/archive-mexico.jpg" alt="Cuisine mexicaine" />
+              </div>
+              <div class="archive-content">
+                <h3>Mexique</h3>
+                <p class="archive-date">Janvier 2025</p>
+                <p class="archive-description">Une explosion de saveurs colorées et vibrants de la cuisine mexicaine traditionnelle.</p>
+                <a href="#" class="btn-secondary">Voir le menu</a>
+              </div>
             </article>
           </div>
         </div>
@@ -167,40 +303,64 @@
         <div class="footer-content">
           <div class="footer-brand">
             <img
-              src="./assets/images/logo_eat&meet.png"
-              alt="Logo Eat & Meet"
+              src="./assets/images/logo_voyage_gourmand.png"
+              alt="Logo Voyage Gourmand"
               class="footer-logo"
             />
-            <p>La cuisine locale réinventée pour les étudiants</p>
+            <p>Voyagez à travers les saveurs du monde entier</p>
           </div>
           <nav class="footer-nav">
             <div class="footer-section">
-              <h4>Menu</h4>
+              <h4>Navigation</h4>
               <ul>
-                <li><a href="#about">À propos</a></li>
+                <li><a href="#destination">Destination du mois</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservation">Réserver</a></li>
+                <li><a href="#passeport">Passeport</a></li>
+                <li><a href="#archives">Archives</a></li>
               </ul>
             </div>
             <div class="footer-section">
               <h4>Contact</h4>
               <address>
-                <p>Adresse du restaurant</p>
-                <p>Téléphone</p>
-                <p>Email</p>
+                <p>15 rue des Voyageurs, 75011 Paris</p>
+                <p>01 23 45 67 89</p>
+                <p>contact@voyage-gourmand.fr</p>
               </address>
             </div>
             <div class="footer-section">
               <h4>Horaires</h4>
-              <p>Lundi - Vendredi: 11h - 22h</p>
-              <p>Samedi - Dimanche: 11h - 23h</p>
+              <p>Mardi - Samedi: 19h - 23h</p>
+              <p>Dimanche: 12h - 15h</p>
+              <p>Fermé le lundi</p>
             </div>
           </nav>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 Eat & Meet. Tous droits réservés.</p>
+          <p>&copy; 2025 Voyage Gourmand. Tous droits réservés.</p>
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialiser AOS (Animation On Scroll)
+        AOS.init({
+          duration: 800,
+          easing: 'ease',
+          once: true,
+          offset: 50
+        });
+        
+        // Gestion du formulaire de réservation
+        const bookingForm = document.getElementById('booking-form');
+        if (bookingForm) {
+          bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre réservation ! Un e-mail de confirmation vous sera envoyé prochainement.');
+            bookingForm.reset();
+          });
+        }
+      });
+    </script>
   </body>
 </html>
